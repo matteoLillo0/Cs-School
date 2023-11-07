@@ -1,2 +1,2 @@
 # Cs-School
-Repo that contains all of my C# projects from school
+Repo that contains my exercises in C# from school
