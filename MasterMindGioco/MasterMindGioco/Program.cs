@@ -48,7 +48,7 @@ namespace MasterMindGioco
 
         #region Generazione array di numeri da indovinare generaNumero();
 
-        static int[] generaNumero()
+        static int[] generaNumero() // funzione che ritorna l'array da indovinare
         {
             List<int> urna = new List<int>(); // lista con i numeri da estrarre
             int[] codiceDaIndov = new int[4]; // array con i numeri da indovinare
@@ -95,7 +95,7 @@ namespace MasterMindGioco
 
                 inputOk = true;
 
-                switch (sceltaUser) // switch che gestisce tutti i casi
+                switch (sceltaUser) // switch che gestisce tutti i casi per inserire i tentativi
                 {
                     case "F":
                         tentativiPartita = 9;
@@ -184,13 +184,18 @@ namespace MasterMindGioco
 
             int[] codiceDaIndovinare = generaNumero();
 
-            for (int i = 0; i<4; i++) // stampa del numero da indovinare a scopo di debug :)
+            /*
+             
+             --- STAMPA CODICE DA INDOVINARE PER DEBUG ---
+
+            for (int i = 0; i<4; i++)
             {
                 Console.Write($"{codiceDaIndovinare[i]} | ");
 
             }
             Console.WriteLine("\n ------------------------------------");
 
+            */
             bool haiVinto = false; // flag che ci permette di stampare due messaggi diversi alla fine
 
             while (tentativiPartita > 0) // cicla finchè ho tentativi rimasti
@@ -239,9 +244,9 @@ namespace MasterMindGioco
                 {
                     countJustNumber -= countPosition;
                     Console.ForegroundColor = ConsoleColor.DarkYellow;
-                    Console.WriteLine($"Ci sono {countJustNumber} numeri giusti, ma alla posizione sbagliata");
+                    Console.WriteLine($"\n -> Ci sono {countJustNumber} numeri giusti, ma alla posizione sbagliata");
                     Console.ForegroundColor = ConsoleColor.Cyan;
-                    Console.WriteLine($"{countPosition} numeri sono giusti e alla posizione giusta");
+                    Console.WriteLine($"\n -> {countPosition} numeri sono giusti e alla posizione giusta");
                     Console.ForegroundColor = ConsoleColor.White;
 
                 }
@@ -252,15 +257,17 @@ namespace MasterMindGioco
             if (!haiVinto) // stampa il messaggio del caso in cui si ha perso
             {
                 Console.ForegroundColor = ConsoleColor.DarkRed;
-                Console.WriteLine("----------------------------");
+                Console.WriteLine("\n ----------------------------");
                 Console.WriteLine("\n --- Hai perso :( --- \n");
-                Console.WriteLine("----------------------------");
+                Console.WriteLine("----------------------------\n");
                 Console.ForegroundColor = ConsoleColor.White;
             }
             
         }
 
         #endregion
+
+        #region Main 
 
         static void Main(string[] args)
         {
@@ -275,6 +282,8 @@ namespace MasterMindGioco
             Console.ReadKey();
 
         }
+
+        #endregion
 
     }
 }
