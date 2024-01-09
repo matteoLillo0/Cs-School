@@ -1,6 +1,6 @@
 ﻿/*
     
-    Matteo Angiolillo, 3°H, 2023-12-19 terminato a casa il 2023-12-22
+    Matteo Angiolillo, 3°H, 2023-12-19 terminato a casa il 2023-12-22 | corretto il 2024-01-09
 
     Esercizio in classe: simulazione di un gioco: Mastermind
 
@@ -153,21 +153,15 @@ namespace MasterMindGioco
                     inputOk = int.TryParse(firstGuess[i].ToString(), out finalGuess[i]);
 
                     if (!inputOk) // controlla che non ci siano caratteri e solo cifre
-                    {   
-                        Console.WriteLine(" ERRORE...Inserire solo numeri...riprova");
+                    {
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine("\n ERRORE...Inserire solo numeri...riprova");
+                        Console.ForegroundColor = ConsoleColor.White;
+
                         inputOk = false;
                         break;
                     }
-                    if (i>0) // serve per gestire l'eccezione che se partiamo dal primo carattere allora l'indice prima non esiste
-                    {
-
-                        if (firstGuess[i] == firstGuess[i - 1])
-                        {
-                            Console.WriteLine(" ERRORE...Inserire solo numeri DIVERSI...riprova");
-                            inputOk = false;
-                            break;
-                        }                        
-                    }
+                    
                 }                
 
             } while (!inputOk); // cicla fino a che l'input non sia valido
