@@ -1,0 +1,8 @@
+C:\Users\matteo.angiolillo\source\repos\TypingTest\TypingTest\bin\Debug\TypingTest.exe.config
+C:\Users\matteo.angiolillo\source\repos\TypingTest\TypingTest\bin\Debug\TypingTest.exe
+C:\Users\matteo.angiolillo\source\repos\TypingTest\TypingTest\bin\Debug\TypingTest.pdb
+C:\Users\matteo.angiolillo\source\repos\TypingTest\TypingTest\obj\Debug\TypingTest.csproj.AssemblyReference.cache
+C:\Users\matteo.angiolillo\source\repos\TypingTest\TypingTest\obj\Debug\TypingTest.csproj.SuggestedBindingRedirects.cache
+C:\Users\matteo.angiolillo\source\repos\TypingTest\TypingTest\obj\Debug\TypingTest.csproj.CoreCompileInputs.cache
+C:\Users\matteo.angiolillo\source\repos\TypingTest\TypingTest\obj\Debug\TypingTest.exe
+C:\Users\matteo.angiolillo\source\repos\TypingTest\TypingTest\obj\Debug\TypingTest.pdb

@@ -14,7 +14,7 @@
         
         -) alla fine stampiamo gli errori totali, i caratteri per minuto e il tempo che ci abbiamo messo 
  
- */
+*/
 
 using System;
 using System.Collections.Generic;
@@ -30,6 +30,7 @@ namespace TypingTest
 {
     internal class Program
     {
+
         #region Creazione Cornice FrameCreation();
 
         static void FrameCreation() // Funzione per la stampa della Cornice
@@ -121,17 +122,18 @@ namespace TypingTest
 
             List<string> lines = new List<string>();
 
-            using (StreamReader sr = new StreamReader(filePath))
+            using (StreamReader sr = new StreamReader(filePath)) // StreamReader apre e chiude da solo il file
             {
                 string line;
 
-                while ((line = sr.ReadLine()) != null)
+                while ((line = sr.ReadLine()) != null) // leggo tutte le stringhe che non sono 'null'
                 {
-                    lines.Add(line);
+                    lines.Add(line); // aggiungo alla mia lista le frasi presenti nel file
                 }
             }
-            // ritorna una frase random dalla lista
-            return lines[new Random().Next(0, lines.Count)];
+
+            return lines[new Random().Next(0, lines.Count)]; // ritorna una frase random dalla lista
+
         }
 
         #endregion
