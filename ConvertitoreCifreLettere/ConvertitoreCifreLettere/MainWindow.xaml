@@ -1,0 +1,41 @@
+﻿<Window x:Class="ConvertitoreCifreLettere.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ConvertitoreCifreLettere"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="206" Width="834">
+    <Grid Margin="0,0,0,-6">
+        <Label Content="Inserisci un numero intero:" HorizontalAlignment="Left" Margin="56,64,0,0" VerticalAlignment="Top" Width="190" FontWeight="UltraLight" FontStyle="Oblique" FontFamily="Consolas" Foreground="#FF131313"/>
+        <TextBox x:Name="txtInput" HorizontalAlignment="Left" Margin="56,95,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="190" Height="33" HorizontalContentAlignment="Center" FontFamily="Consolas" VerticalContentAlignment="Center" Foreground="#FF131313" InputScope="Number"/>
+        <Label Content="Convertitore numeri - parole" HorizontalAlignment="Center" Margin="0,18,0,0" VerticalAlignment="Top" Width="294" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" FontSize="18" Height="32" FontFamily="Consolas" Foreground="#FF131313">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.05"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Rectangle HorizontalAlignment="Center" Height="1" Margin="0,58,0,0" VerticalAlignment="Top" Width="592" Fill="#FF131313"/>
+        <Button x:Name="btnConverti" Content="Converti" HorizontalAlignment="Center" Margin="0,95,0,0" VerticalAlignment="Top" Height="33" Width="206" Click="btnConverti_Click" FontFamily="Consolas" Foreground="#FF131313"/>
+        <Rectangle HorizontalAlignment="Center" Height="1" Margin="0,14,0,0" VerticalAlignment="Top" Width="722" Fill="#FF131313"/>
+        <Label x:Name="lblIntestazione" Content="Matteo Angiolillo 3H 2024-01-30" HorizontalAlignment="Left" Margin="348,60,0,0" VerticalAlignment="Top" Width="157" RenderTransformOrigin="0.5,0.5" FontSize="8.5" Height="22" FontFamily="Consolas" FontWeight="Black" Foreground="#FFB3B3B3">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.05"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Rectangle HorizontalAlignment="Left" Height="33" Margin="588,95,0,0" Stroke="#FFABADB3" VerticalAlignment="Top" Width="190"/>
+        <Label Content="Output in lettere:" HorizontalAlignment="Left" Margin="588,65,0,0" VerticalAlignment="Top" Width="190" FontWeight="UltraLight" FontStyle="Oblique" FontFamily="Consolas" Foreground="#FF131313"/>
+        <Label x:Name="lblOutput" Content="" HorizontalAlignment="Left" Height="33" Margin="588,95,0,0" VerticalAlignment="Top" Width="190" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="#FF131313"/>
+        <Button x:Name="btnReset" Content="Reset" HorizontalAlignment="Center" Margin="0,133,0,0" VerticalAlignment="Top" Height="16" Width="206" Click="btnReset_Click" FontFamily="Consolas" Foreground="#FF131313" FontSize="10"/>
+
+    </Grid>
+</Window>
