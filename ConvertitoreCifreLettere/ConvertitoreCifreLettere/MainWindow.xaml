@@ -20,7 +20,13 @@
             </Label.RenderTransform>
         </Label>
         <Rectangle HorizontalAlignment="Center" Height="1" Margin="0,58,0,0" VerticalAlignment="Top" Width="592" Fill="#FF131313"/>
-        <Button x:Name="btnConverti" Content="Converti" HorizontalAlignment="Center" Margin="0,95,0,0" VerticalAlignment="Top" Height="33" Width="206" Click="btnConverti_Click" FontFamily="Consolas" Foreground="#FF131313"/>
+        <Button x:Name="btnConverti" Content="Converti" HorizontalAlignment="Center" Margin="0,95,0,0" VerticalAlignment="Top" Height="33" Width="206" Click="btnConverti_Click" FontFamily="Consolas" Foreground="#FF131313">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
         <Rectangle HorizontalAlignment="Center" Height="1" Margin="0,14,0,0" VerticalAlignment="Top" Width="722" Fill="#FF131313"/>
         <Label x:Name="lblIntestazione" Content="Matteo Angiolillo 3H 2024-01-30" HorizontalAlignment="Left" Margin="348,60,0,0" VerticalAlignment="Top" Width="157" RenderTransformOrigin="0.5,0.5" FontSize="8.5" Height="22" FontFamily="Consolas" FontWeight="Black" Foreground="#FFB3B3B3">
             <Label.RenderTransform>
@@ -35,7 +41,12 @@
         <Rectangle HorizontalAlignment="Left" Height="33" Margin="588,95,0,0" Stroke="#FFABADB3" VerticalAlignment="Top" Width="190"/>
         <Label Content="Output in lettere:" HorizontalAlignment="Left" Margin="588,65,0,0" VerticalAlignment="Top" Width="190" FontWeight="UltraLight" FontStyle="Oblique" FontFamily="Consolas" Foreground="#FF131313"/>
         <Label x:Name="lblOutput" Content="" HorizontalAlignment="Left" Height="33" Margin="588,95,0,0" VerticalAlignment="Top" Width="190" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="#FF131313"/>
-        <Button x:Name="btnReset" Content="Reset" HorizontalAlignment="Center" Margin="0,133,0,0" VerticalAlignment="Top" Height="16" Width="206" Click="btnReset_Click" FontFamily="Consolas" Foreground="#FF131313" FontSize="10"/>
-
+        <Button x:Name="btnReset" Content="Reset" HorizontalAlignment="Center" Margin="0,133,0,0" VerticalAlignment="Top" Height="16" Width="206" Click="btnReset_Click" FontFamily="Consolas" Foreground="#FF131313" FontSize="10">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
     </Grid>
 </Window>
