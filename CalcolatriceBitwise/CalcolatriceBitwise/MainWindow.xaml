@@ -1,0 +1,79 @@
+﻿<Window x:Class="CalcolatriceBitwise.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CalcolatriceBitwise"
+        mc:Ignorable="d"
+        Title=" Calcolatrice BitWise || Matteo Angiolillo 3H || 2024-02-06 -- 2024-02-20 " Height="450" Width="800" ResizeMode="NoResize">
+    <Grid Background="#FFD2E3C8">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="317*"/>
+            <ColumnDefinition Width="483*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="txtBinario_First" HorizontalAlignment="Left" Margin="83,64,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="211" Height="35" RenderTransformOrigin="0.5,0.5" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" IsEnabled="False" BorderBrush="#FFABADB3" Background="White" FontSize="14">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="0.214"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="0.329"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Button x:Name="btnZero_First" Content="0" HorizontalAlignment="Left" Margin="83,145,0,0" VerticalAlignment="Top" Height="54" Width="102" Click="btnZero_First_Click" FontSize="14" FontFamily="Cascadia Code" Background="#FF86A789"/>
+        <Button x:Name="btnUno_First" Content="1" HorizontalAlignment="Left" Margin="192,145,0,0" VerticalAlignment="Top" Height="54" Width="102" Click="btnUno_First_Click" FontSize="14" FontFamily="Cascadia Code" BorderBrush="#FF707070" Background="#FF86A789"/>
+        <TextBox x:Name="txtParametroS_First" HorizontalAlignment="Left" Margin="138,103,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="99" Height="37" RenderTransformOrigin="0.5,0.5" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="White" BorderBrush="#FFABADB3">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="0.214"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="0.329"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Button x:Name="btnShiftRight_First" Content="&gt;&gt;" HorizontalAlignment="Left" Margin="244,104,0,0" VerticalAlignment="Top" Height="36" Width="50" Click="btnShiftRight_First_Click" FontFamily="Cascadia Code" FontSize="14" BorderBrush="#FF86A789" Background="#FFABD2AF"/>
+        <Button x:Name="btnShiftLeft_First" Content="&lt;&lt;" HorizontalAlignment="Left" Margin="83,104,0,0" VerticalAlignment="Top" Height="36" Width="50" Click="btnShiftLeft_First_Click" FontFamily="Cascadia Code" FontSize="14" Background="#FFABD2AF" BorderBrush="#FFABADB3"/>
+        <Button x:Name="btnNot_First" Content="NOT" HorizontalAlignment="Left" Margin="83,31,0,0" VerticalAlignment="Top" Height="25" Width="211" Click="btnNot_First_Click" FontFamily="Cascadia Code" FontSize="14" Background="#FF86A789"/>
+        <TextBox x:Name="txtBinario_Second" HorizontalAlignment="Left"  TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="211" Height="35" RenderTransformOrigin="0.5,0.5" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" IsEnabled="False" BorderBrush="#FFABADB3" Margin="83,265,0,0" FontSize="14">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="0.197"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="0.329"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Button x:Name="btnZero_Second" Content="0" HorizontalAlignment="Left" Margin="83,346,0,0" VerticalAlignment="Top" Height="48" Width="102" Click="btnZero_Second_Click" FontFamily="Cascadia Code" FontSize="14" Background="#FF86A789"/>
+        <Button x:Name="btnUno_Second" Content="1" HorizontalAlignment="Left" Margin="192,346,0,0" VerticalAlignment="Top" Height="48" Width="102" Click="btnUno_Second_Click" FontFamily="Cascadia Code" FontSize="14" Background="#FF86A789"/>
+        <TextBox x:Name="txtParametroS_Second" HorizontalAlignment="Left" Margin="138,307,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="99" Height="33" RenderTransformOrigin="0.5,0.5" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="0.197"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="0.329"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Button x:Name="btnShiftRight_Second" Content="&gt;&gt;" HorizontalAlignment="Left" Margin="244,307,0,0" VerticalAlignment="Top" Height="33" Width="50" Click="btnShiftRight_Second_Click" FontFamily="Cascadia Code" FontSize="14" Background="#FFABD2AF" BorderBrush="#FFABADB3"/>
+        <Button x:Name="btnShiftLeft_Second" Content="&lt;&lt;" HorizontalAlignment="Left" Margin="83,307,0,0" VerticalAlignment="Top" Height="33" Width="50" Click="btnShiftLeft_Second_Click" FontFamily="Cascadia Code" FontSize="14" Background="#FFABD2AF" BorderBrush="#FFABADB3"/>
+        <Button x:Name="btnNot_Second" Content="NOT" HorizontalAlignment="Left" Margin="83,235,0,0" VerticalAlignment="Top" Height="25" Width="211" Click="btnNot_Second_Click" FontFamily="Cascadia Code" FontSize="14" Background="#FF86A789"/>
+        <Label Content="Prima stringa" HorizontalAlignment="Left" Margin="138,2,0,0" VerticalAlignment="Top" FontFamily="Cascadia Code Light"/>
+        <Button x:Name="btnAnd" Content="AND" HorizontalAlignment="Left" Margin="30,68,0,0" VerticalAlignment="Top" Height="54" Width="142" Click="btnAnd_Click" FontFamily="Cascadia Code" FontSize="14" Background="#FF86A789" Grid.Column="1"/>
+        <Button x:Name="btnOr" Content="OR" HorizontalAlignment="Left" Margin="30,163,0,0" VerticalAlignment="Top" Height="54" Width="142" Click="btnOr_Click" FontFamily="Cascadia Code" FontSize="14" Background="#FF86A789" Grid.Column="1"/>
+        <Button x:Name="btnXor" Content="XOR" HorizontalAlignment="Left" Margin="30,270,0,0" VerticalAlignment="Top" Height="54" Width="142" Click="btnXor_Click" FontFamily="Cascadia Code" FontSize="14" Background="#FF86A789" Grid.Column="1"></Button>
+        <TextBox x:Name="txtRisultato" HorizontalAlignment="Left" Margin="191,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="198" Height="261" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsEnabled="False" Background="White" BorderThickness="2,2,2,2" FontSize="14" FontFamily="Cascadia Mono" Grid.Column="1">
+            <TextBox.Resources>
+
+            </TextBox.Resources>
+        </TextBox>
+        <Label Content="Risultato" HorizontalAlignment="Left" Margin="253,44,0,0" VerticalAlignment="Top" FontFamily="Cascadia Code Light" Grid.Column="1"/>
+        <Label Content="Seconda stringa" HorizontalAlignment="Left" Margin="131,209,0,0" VerticalAlignment="Top" FontFamily="Cascadia Code Light" Height="26"/>
+        <Label Content="Comparatori" HorizontalAlignment="Left" Margin="57,44,0,0" VerticalAlignment="Top" FontFamily="Cascadia Code Light" Grid.Column="1"/>
+        <Button x:Name="btnReset" Content="RESET" HorizontalAlignment="Left" Margin="191,343,0,0" VerticalAlignment="Top" Height="37" Width="198" Click="btnReset_Click" FontFamily="Cascadia Code" FontSize="14" Background="#FF86A789" Grid.Column="1"/>
+        <Label Content="Matteo Angiolillo 3H 2024-02-20" HorizontalAlignment="Left" Margin="310,385,0,0" VerticalAlignment="Top" FontFamily="Consolas" Grid.ColumnSpan="2" FontStyle="Italic" Foreground="#FF616161"/>
+    </Grid>
+</Window>
