@@ -273,7 +273,7 @@ namespace ConvertitoreCifreLettere
             #endregion
         }
 
-        private void btnReset_Click(object sender, RoutedEventArgs e)
+        private void btnReset_Click(object sender, RoutedEventArgs e) // per resettare le textbox
         {
             txtInput.Text = "";
             lblOutput.Content = "";
